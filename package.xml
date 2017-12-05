@@ -11,9 +11,10 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <build_depend>rhoban_geometry</build_depend>
+  <build_depend>rhoban_geometry</build_depend> <!-- rhobandeps/rhoban_geometry -->
   <run_depend>rhoban_geometry</run_depend>
 
   <export>
+    dijkstra.cpp
   </export>
 </package>

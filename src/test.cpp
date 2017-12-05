@@ -1,12 +1,15 @@
 #include <cmath>
 #include <iostream>
-#include "Graph.hpp"
-#include "Djikstra.hpp"
-#include "ObstacleAvoider.hpp"
-#include <geometry/Segment.hpp>
-#include <geometry/Circle.hpp>
+#include "rhoban_graphs/graph.h"
+#include "rhoban_graphs/dijkstra.h"
+#include "rhoban_graphs/obstacle_avoider.h"
+#include "rhoban_geometry/segment.h"
+#include "rhoban_geometry/circle.h"
 
-void testDjikstra()
+using namespace rhoban_graphs;
+using namespace rhoban_geometry;
+
+void testDijkstra()
 {
     Graph g;
 
@@ -83,7 +86,7 @@ void testCircleTangents()
 
 int main()
 {
-    // testDjikstra();
+    // testDijkstra();
     // testCirlceIntersection();
     // testObstacleAvoider();
     testCircleTangents();

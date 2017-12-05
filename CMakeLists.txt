@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
 project(rhoban_graphs)
 
+option (RHOBAN_GRAPHS_BUILD_APPS "Build rhoban_graphs apps" OFF)
+
 find_package(catkin REQUIRED COMPONENTS
   rhoban_geometry
 )
@@ -39,8 +41,9 @@ add_library (rhoban_graphs ${ALL_SOURCES})
 target_link_libraries(rhoban_graphs ${catkin_LIBRARIES})
 
 if (RHOBAN_GRAPHS_BUILD_APPS)
-#    add_executable (astarTest astar/main.cpp)
-#    target_link_libraries (astarTest rhoban_utils)
-    add_executable (graphTest graph/test.cpp)
-    target_link_libraries (graphTest rhoban_utils)
+    add_executable (astarTest src/a_star_test.cpp)
+    target_link_libraries (astarTest rhoban_graphs ${catkin_LIBRARIES})
+    
+    add_executable (graphTest src/test.cpp)
+    target_link_libraries (graphTest rhoban_graphs ${catkin_LIBRARIES})
 endif()
