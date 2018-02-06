@@ -11,7 +11,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <build_depend>rhoban_geometry</build_depend> <!-- rhobanproject/rhoban_geometry -->
+  <build_depend>rhoban_geometry</build_depend> <!-- rhoban/geometry -->
   <run_depend>rhoban_geometry</run_depend>
 
   <export>
