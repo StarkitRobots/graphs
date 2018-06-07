@@ -102,7 +102,7 @@ std::vector<Point> ObstacleAvoider::findPath(
                                 segment.intersects(obstacle)
                                 ) {
                             if (startOrGoal) {
-                                score *= 5;
+                                score *= 15;
                             } else {
                                 ok = false;
                             }
