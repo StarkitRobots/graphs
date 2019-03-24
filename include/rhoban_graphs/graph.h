@@ -5,24 +5,23 @@
 
 namespace rhoban_graphs
 {
-
 class Graph
 {
-    public:
-        typedef unsigned int Node;
-        
-        struct Edge
-        {
-            Node node1;
-            Node node2;
-            double weight;
-        };
+public:
+  typedef unsigned int Node;
 
-        void add(Node node);
-        void connect(Node node1, Node node2, double weight=0);
+  struct Edge
+  {
+    Node node1;
+    Node node2;
+    double weight;
+  };
 
-        std::vector<Node> nodes;
-        std::map<Node, std::vector<Edge>> edges;
+  void add(Node node);
+  void connect(Node node1, Node node2, double weight = 0);
+
+  std::vector<Node> nodes;
+  std::map<Node, std::vector<Edge>> edges;
 };
 
-}
+}  // namespace rhoban_graphs
