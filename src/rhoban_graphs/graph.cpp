@@ -1,6 +1,6 @@
-#include "rhoban_graphs/graph.h"
+#include "starkit_graphs/graph.h"
 
-namespace rhoban_graphs
+namespace starkit_graphs
 {
 void Graph::add(Node node)
 {
@@ -18,4 +18,4 @@ void Graph::connect(Node node1, Node node2, double weight)
   edges[node2].push_back(edge);
 }
 
-}  // namespace rhoban_graphs
+}  // namespace starkit_graphs

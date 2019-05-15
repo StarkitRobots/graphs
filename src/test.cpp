@@ -1,13 +1,13 @@
 #include <cmath>
 #include <iostream>
-#include "rhoban_graphs/graph.h"
-#include "rhoban_graphs/dijkstra.h"
-#include "rhoban_graphs/obstacle_avoider.h"
-#include "rhoban_geometry/segment.h"
-#include "rhoban_geometry/circle.h"
+#include "starkit_graphs/graph.h"
+#include "starkit_graphs/dijkstra.h"
+#include "starkit_graphs/obstacle_avoider.h"
+#include "starkit_geometry/segment.h"
+#include "starkit_geometry/circle.h"
 
-using namespace rhoban_graphs;
-using namespace rhoban_geometry;
+using namespace starkit_graphs;
+using namespace starkit_geometry;
 
 void testDijkstra()
 {

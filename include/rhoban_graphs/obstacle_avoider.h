@@ -2,22 +2,22 @@
 
 #include <functional>
 
-#include "rhoban_geometry/circle.h"
-#include "rhoban_geometry/point.h"
+#include "starkit_geometry/circle.h"
+#include "starkit_geometry/point.h"
 
-namespace rhoban_graphs
+namespace starkit_graphs
 {
 class ObstacleAvoider
 {
 public:
-  void addObstacle(rhoban_geometry::Point center, double radius);
+  void addObstacle(starkit_geometry::Point center, double radius);
 
-  std::vector<rhoban_geometry::Point>
-  findPath(rhoban_geometry::Point start, rhoban_geometry::Point goal, double accuracy = 20, double* score = NULL,
-           std::function<bool(rhoban_geometry::Point)> filter = [](rhoban_geometry::Point) { return true; });
+  std::vector<starkit_geometry::Point>
+  findPath(starkit_geometry::Point start, starkit_geometry::Point goal, double accuracy = 20, double* score = NULL,
+           std::function<bool(starkit_geometry::Point)> filter = [](starkit_geometry::Point) { return true; });
 
 protected:
-  std::vector<rhoban_geometry::Circle> obstacles;
+  std::vector<starkit_geometry::Circle> obstacles;
 };
 
-}  // namespace rhoban_graphs
+}  // namespace starkit_graphs

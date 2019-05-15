@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>rhoban_graphs</name>
+  <name>starkit_graphs</name>
   <version>0.0.0</version>
-  <description>Graph library for rhoban</description>
+  <description>Graph library for starkit</description>
 
   <maintainer email="gpassault@labri.fr">Grégoire Passault</maintainer>
   <author email="gpassault@labri.fr">Grégoire Passault</author>
@@ -11,8 +11,8 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <build_depend>rhoban_geometry</build_depend> <!-- rhoban/geometry -->
-  <run_depend>rhoban_geometry</run_depend>
+  <build_depend>starkit_geometry</build_depend> <!-- starkit/geometry -->
+  <run_depend>starkit_geometry</run_depend>
 
   <export>
     dijkstra.cpp

@@ -4,11 +4,11 @@
 #include <map>
 #include <set>
 
-#include "rhoban_graphs/a_star.h"
+#include "starkit_graphs/a_star.h"
 
-using namespace rhoban_geometry;
+using namespace starkit_geometry;
 
-namespace rhoban_graphs
+namespace starkit_graphs
 {
 AStar::Pos::Pos()
 {
@@ -164,4 +164,4 @@ std::vector<Point> AStar::solveCont(Point start, Point goal, std::function<bool(
   return result;
 }
 
-}  // namespace rhoban_graphs
+}  // namespace starkit_graphs

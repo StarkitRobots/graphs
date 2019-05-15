@@ -1,9 +1,9 @@
 #include <cmath>
 #include <iostream>
-#include "rhoban_graphs/a_star.h"
+#include "starkit_graphs/a_star.h"
 
-using namespace rhoban_graphs;
-using rhoban_geometry::Point;
+using namespace starkit_graphs;
+using starkit_geometry::Point;
 
 int main()
 {

@@ -3,7 +3,7 @@
 #include <vector>
 #include <map>
 
-namespace rhoban_graphs
+namespace starkit_graphs
 {
 class Graph
 {
@@ -24,4 +24,4 @@ public:
   std::map<Node, std::vector<Edge>> edges;
 };
 
-}  // namespace rhoban_graphs
+}  // namespace starkit_graphs

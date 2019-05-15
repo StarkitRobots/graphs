@@ -2,9 +2,9 @@
 
 #include <functional>
 
-#include "rhoban_geometry/point.h"
+#include "starkit_geometry/point.h"
 
-namespace rhoban_graphs
+namespace starkit_graphs
 {
 class AStar
 {
@@ -55,9 +55,9 @@ public:
   static std::vector<Pos> solve(Pos start, Pos goal, std::function<bool(Pos)> reachable, size_t maxIter = 0,
                                 double* score = NULL);
 
-  static std::vector<rhoban_geometry::Point> solveCont(rhoban_geometry::Point start, rhoban_geometry::Point goal,
-                                                       std::function<bool(rhoban_geometry::Point)> reachable,
+  static std::vector<starkit_geometry::Point> solveCont(starkit_geometry::Point start, starkit_geometry::Point goal,
+                                                       std::function<bool(starkit_geometry::Point)> reachable,
                                                        double step, size_t maxIter = 0, double* score = NULL);
 };
 
-}  // namespace rhoban_graphs
+}  // namespace starkit_graphs

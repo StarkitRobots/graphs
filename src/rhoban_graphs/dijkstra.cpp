@@ -1,9 +1,9 @@
 #include <iostream>
 #include <algorithm>
 #include <set>
-#include "rhoban_graphs/dijkstra.h"
+#include "starkit_graphs/dijkstra.h"
 
-namespace rhoban_graphs
+namespace starkit_graphs
 {
 std::vector<Graph::Node> Djikstra::findPath(Graph& graph, Graph::Node start, Graph::Node goal, double* score)
 {
@@ -85,4 +85,4 @@ std::vector<Graph::Node> Djikstra::findPath(Graph& graph, Graph::Node start, Gra
   return nodes;
 }
 
-}  // namespace rhoban_graphs
+}  // namespace starkit_graphs

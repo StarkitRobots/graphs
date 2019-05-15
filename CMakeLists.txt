@@ -1,16 +1,16 @@
 cmake_minimum_required(VERSION 2.8)
-project(rhoban_graphs)
+project(starkit_graphs)
 
-option (RHOBAN_GRAPHS_BUILD_APPS "Build rhoban_graphs apps" OFF)
+option (STARKIT_GRAPHS_BUILD_APPS "Build starkit_graphs apps" OFF)
 
 find_package(catkin REQUIRED COMPONENTS
-  rhoban_geometry
+  starkit_geometry
 )
 
 catkin_package(
   INCLUDE_DIRS include
-  LIBRARIES rhoban_graphs
-  CATKIN_DEPENDS rhoban_geometry
+  LIBRARIES starkit_graphs
+  CATKIN_DEPENDS starkit_geometry
 )
 
 include_directories(include ${catkin_INCLUDE_DIRS})
@@ -23,7 +23,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
 
 #List Sources sub source directories
 set(SOURCES_DIRECTORIES
-  src/rhoban_graphs
+  src/starkit_graphs
 )
 
 #Include Sources sub sources
@@ -37,13 +37,13 @@ foreach (DIRECTORY ${SOURCES_DIRECTORIES})
     set (ALL_SOURCES ${ALL_SOURCES} ${PREFIXED_SOURCES})
 endforeach (DIRECTORY)
 
-add_library (rhoban_graphs ${ALL_SOURCES})
-target_link_libraries(rhoban_graphs ${catkin_LIBRARIES})
+add_library (starkit_graphs ${ALL_SOURCES})
+target_link_libraries(starkit_graphs ${catkin_LIBRARIES})
 
-if (RHOBAN_GRAPHS_BUILD_APPS)
+if (STARKIT_GRAPHS_BUILD_APPS)
     add_executable (astarTest src/a_star_test.cpp)
-    target_link_libraries (astarTest rhoban_graphs ${catkin_LIBRARIES})
+    target_link_libraries (astarTest starkit_graphs ${catkin_LIBRARIES})
     
     add_executable (graphTest src/test.cpp)
-    target_link_libraries (graphTest rhoban_graphs ${catkin_LIBRARIES})
+    target_link_libraries (graphTest starkit_graphs ${catkin_LIBRARIES})
 endif()

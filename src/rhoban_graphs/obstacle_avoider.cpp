@@ -2,16 +2,16 @@
 #include <map>
 #include <cmath>
 
-#include "rhoban_geometry/segment.h"
-#include "rhoban_graphs/dijkstra.h"
-#include "rhoban_graphs/graph.h"
-#include "rhoban_graphs/obstacle_avoider.h"
+#include "starkit_geometry/segment.h"
+#include "starkit_graphs/dijkstra.h"
+#include "starkit_graphs/graph.h"
+#include "starkit_graphs/obstacle_avoider.h"
 
 // #define DEBUG
 
-using namespace rhoban_geometry;
+using namespace starkit_geometry;
 
-namespace rhoban_graphs
+namespace starkit_graphs
 {
 void ObstacleAvoider::addObstacle(Point center, double radius)
 {
@@ -188,4 +188,4 @@ std::vector<Point> ObstacleAvoider::findPath(Point start, Point goal, double acc
   return path;
 }
 
-}  // namespace rhoban_graphs
+}  // namespace starkit_graphs
