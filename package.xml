@@ -11,7 +11,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <build_depend>starkit_geometry</build_depend> <!-- starkit/geometry -->
+  <build_depend>starkit_geometry</build_depend> <!-- StarkitRobots/geometry -->
   <run_depend>starkit_geometry</run_depend>
 
   <export>
